@@ -57,4 +57,10 @@ console.log(typeof newVariable);
 newVariable = 1;
 console.log(typeof newVariable);
 
-// 
+// conditional if and else statements
+let hungerLevel = 7;
+if (hungerLevel > 7) {
+  console.log('Time to eat!');
+} else {
+  console.log('We can eat later!');
+}
