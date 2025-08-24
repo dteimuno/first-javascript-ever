@@ -114,3 +114,49 @@ switch (athleteFinalPosition){
   default:
     console.log('No medal awarded.');
     break;
+}
+
+// functions
+function getReminder() {
+  console.log('Water the plants.');
+};
+function greetInSpanish() {
+  console.log('Buenas tardes.');
+}
+
+// calling a function:
+function sayThanks() {
+  console.log('Thank you for your purchase! We appreciate your business.');
+};
+sayThanks();
+
+// return within functions
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors)
+
+// arrow functions
+// instead of the normal function style:
+const plantNeedsWater = function (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+// you can use this:
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+/* Concise body arrow functions
+if a function has a single parameter a parenthesis can be ignored. Also, when a function has a single line in the curl bracket that can also be ignore */
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
